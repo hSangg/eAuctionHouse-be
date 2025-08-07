@@ -9,7 +9,7 @@ public class EAuctionHouseBeApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(EAuctionHouseBeApplication.class, args);
-		System.out.println("mentor-mentee");
+		System.out.println("mentor-mentee-update");
 	}
 
 }
