@@ -2,3 +2,6 @@ spring:
   data:
     mongodb:
       uri: ${MONGO_DB_URI}
+server:
+  servlet:
+    context-path: /eAuction-house-api
