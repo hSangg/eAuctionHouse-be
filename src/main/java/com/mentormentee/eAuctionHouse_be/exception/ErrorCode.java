@@ -5,6 +5,7 @@ import lombok.Getter;
 @Getter
 public enum ErrorCode {
     PARENT_CATEGORY_NOT_FOUND("parentcategorynotfound", "Parent category not found"),
+    CATEGORY_NOT_FOUND("categorynotfound", "Category not found"),
     PRODUCT_NOT_FOUND("productnotfound", "Product not found"),
     USER_NOT_FOUND("usernotfound", "User not found"),
     INVALID_REQUEST("invalidrequest", "Invalid request");
@@ -17,4 +18,3 @@ public enum ErrorCode {
         this.message = message;
     }
 }
-

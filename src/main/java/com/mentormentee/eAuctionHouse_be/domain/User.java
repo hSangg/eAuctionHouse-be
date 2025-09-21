@@ -18,7 +18,7 @@ import java.util.UUID;
 @Builder
 public class User {
     @Id
-    private UUID id;
+    private String id;
 
     private String username;
 

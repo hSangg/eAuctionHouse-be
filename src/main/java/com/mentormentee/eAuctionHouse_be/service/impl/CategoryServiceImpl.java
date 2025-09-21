@@ -10,12 +10,10 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor
 public class CategoryServiceImpl implements CategoryService {
-
 
     private final CategoryRepository categoryRepository;
     private final CategoryMapper categoryMapper;
@@ -37,7 +35,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryDTO getCategoryById(String id) {
         var category = categoryRepository.findById(id)
-            .orElseThrow(() -> new AppBadRequestException(ErrorCode.PARENT_CATEGORY_NOT_FOUND));
+            .orElseThrow(() -> new AppBadRequestException(ErrorCode.CATEGORY_NOT_FOUND));
         return categoryMapper.toDto(category);
     }
 }
